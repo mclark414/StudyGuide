@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/country_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/australia"/>
+        <TextView
+            android:id="@+id/country_ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/country_image"
+            android:textSize="36sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="12dp"
+            android:text="@string/australia"/>
+
+        <TextView
+            android:id="@+id/country_fact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/country_ques"
+            android:layout_toRightOf="@id/country_image"
+            android:text="@string/question_australia"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp"
+            android:layout_marginLeft="12dp"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
